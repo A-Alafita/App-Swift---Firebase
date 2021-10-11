@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 import FirebaseFirestoreSwift
 
-struct Task:Identifiable, Decodable{
+struct Task: Identifiable, Encodable, Decodable{
     
     @DocumentID var id: String?
     var task : String
@@ -28,4 +28,7 @@ struct Task:Identifiable, Decodable{
         case date_created
         case due_date
     }
+}
+extension Task{
+    static let dummy = Task(task: "", category_id: "01", priority_id: "01", is_completed: false, date_created:Date(), due_date: Date())
 }

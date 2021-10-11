@@ -19,6 +19,13 @@
 		FB3C21A3270F5C330095EF76 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C21A2270F5C330095EF76 /* Task.swift */; };
 		FB3C21A6270F5D920095EF76 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C21A5270F5D920095EF76 /* TaskModel.swift */; };
 		FB3C21AA270F61690095EF76 /* App06_TODO_firebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C21A9270F61690095EF76 /* App06_TODO_firebaseApp.swift */; };
+		FB3C21AD270F6E180095EF76 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C21AC270F6E180095EF76 /* TaskDetailView.swift */; };
+		FB6598F4271489FA002594D7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6598F3271489FA002594D7 /* Category.swift */; };
+		FB6598F627148ABF002594D7 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6598F527148ABF002594D7 /* Priority.swift */; };
+		FBBBA760271491CA0072F53D /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBA75F271491CA0072F53D /* CategoryView.swift */; };
+		FBBBA7632714A7730072F53D /* PriorityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBA7622714A7730072F53D /* PriorityView.swift */; };
+		FBBBA7662714A7960072F53D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBA7652714A7960072F53D /* Date.swift */; };
+		FBBBA7692714AA7F0072F53D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBA7682714AA7F0072F53D /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,13 @@
 		FB3C21A2270F5C330095EF76 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		FB3C21A5270F5D920095EF76 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		FB3C21A9270F61690095EF76 /* App06_TODO_firebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App06_TODO_firebaseApp.swift; sourceTree = "<group>"; };
+		FB3C21AC270F6E180095EF76 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		FB6598F3271489FA002594D7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FB6598F527148ABF002594D7 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		FBBBA75F271491CA0072F53D /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		FBBBA7622714A7730072F53D /* PriorityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityView.swift; sourceTree = "<group>"; };
+		FBBBA7652714A7960072F53D /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		FBBBA7682714AA7F0072F53D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +84,12 @@
 			children = (
 				FB3C21A1270F5C150095EF76 /* Models */,
 				FB3C2180270F55F90095EF76 /* TaskListView.swift */,
+				FBBBA7682714AA7F0072F53D /* Enums.swift */,
+				FB3C21AC270F6E180095EF76 /* TaskDetailView.swift */,
+				FBBBA7622714A7730072F53D /* PriorityView.swift */,
+				FBBBA7652714A7960072F53D /* Date.swift */,
 				FB3C21A9270F61690095EF76 /* App06_TODO_firebaseApp.swift */,
+				FBBBA75F271491CA0072F53D /* CategoryView.swift */,
 				FB3C2182270F55FA0095EF76 /* Assets.xcassets */,
 				FB3C218A270F55FA0095EF76 /* Info.plist */,
 				FB3C2191270F56D90095EF76 /* GoogleService-Info.plist */,
@@ -92,6 +111,8 @@
 			children = (
 				FB3C21A2270F5C330095EF76 /* Task.swift */,
 				FB3C21A5270F5D920095EF76 /* TaskModel.swift */,
+				FB6598F3271489FA002594D7 /* Category.swift */,
+				FB6598F527148ABF002594D7 /* Priority.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,9 +198,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3C21AA270F61690095EF76 /* App06_TODO_firebaseApp.swift in Sources */,
+				FBBBA7662714A7960072F53D /* Date.swift in Sources */,
 				FB3C21A6270F5D920095EF76 /* TaskModel.swift in Sources */,
+				FBBBA7632714A7730072F53D /* PriorityView.swift in Sources */,
+				FB6598F627148ABF002594D7 /* Priority.swift in Sources */,
 				FB3C21A3270F5C330095EF76 /* Task.swift in Sources */,
 				FB3C2181270F55F90095EF76 /* TaskListView.swift in Sources */,
+				FB3C21AD270F6E180095EF76 /* TaskDetailView.swift in Sources */,
+				FBBBA760271491CA0072F53D /* CategoryView.swift in Sources */,
+				FB6598F4271489FA002594D7 /* Category.swift in Sources */,
+				FBBBA7692714AA7F0072F53D /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
