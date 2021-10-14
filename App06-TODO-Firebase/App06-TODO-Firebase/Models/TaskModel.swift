@@ -7,6 +7,7 @@
 
 
 
+
 import SwiftUI
 import FirebaseFirestore
 
@@ -19,10 +20,12 @@ class TaskModel: ObservableObject {
     private let db = Firestore.firestore()
     
     init() {
-        fetchData()
+        fetchTasks()
+        fetchCategories()
+        fetchPriorities()
     }
     
-    func fetchData() {
+    func fetchTasks() {
         
         db.collection("Tasks").order(by: "due_date").addSnapshotListener { (querySnapshot, error) in
             
@@ -40,6 +43,7 @@ class TaskModel: ObservableObject {
         }
         
     }
+    
     func fetchCategories() {
         
         db.collection("Category").order(by: "category_id").addSnapshotListener { (querySnapshot, error) in
@@ -58,7 +62,8 @@ class TaskModel: ObservableObject {
         }
         
     }
-    func fetchPriority() {
+
+    func fetchPriorities() {
         
         db.collection("Priority").order(by: "priority_id").addSnapshotListener { (querySnapshot, error) in
             
@@ -76,7 +81,7 @@ class TaskModel: ObservableObject {
         }
         
     }
-    
+
     // Función para agregar datos a la base de datos
     func addData(task: Task) {
         do {
